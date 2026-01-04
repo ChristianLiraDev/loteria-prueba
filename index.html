@@ -2,15 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lotería</title>
-    <link  href="css/styles1.css" rel="stylesheet"  />
+    <link href="css/styles1.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="resetCards()">
     <h1>LOTERIA MEXICANA</h1>
-    <div class="container">
+    <!-- <div class="container">
+
        <div class="card">
         <img class="img"src="imgs/cartas/Baraja loteria mexicana_pages-to-jpg-0001.jpg">
        </div> 
@@ -173,6 +172,12 @@
        <div class="card">
         <img class="img"src="imgs/cartas/Baraja loteria mexicana_pages-to-jpg-0054.jpg">
        </div> 
-    </div>
+    </div> -->
+    <div id="contenedorcartas" class="contenedorcartas"></div>
+    <button id="botonMostrarCarta" onclick="changePickedCard()">
+      ADELANTE
+    </button>
+    <button id="botonReiniciarBaraja" onclick="resetCards()">REINICIAR</button>
+    <script src="js/script1.js"></script>
   </body>
 </html>
